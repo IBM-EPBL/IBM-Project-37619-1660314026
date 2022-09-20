@@ -1,0 +1,64 @@
+#include<Servo.h>
+const int ultPin = 7;
+int servoPin = 8;
+
+Servo servo1;
+
+void setup() {
+  Serial.begin(9600);
+  servo1.attach(servoPin);
+  pinMode(2,INPUT);
+  pinMode(4,OUTPUT);
+  pinMode(12,OUTPUT);
+  pinMode(A0,INPUT);
+  digitalWrite(2,LOW);
+}
+
+void loop() {
+  
+  long duration, inches, cm;
+  
+  pinMode(ultPin, OUTPUT);
+  digitalWrite(ultPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(ultPin, HIGH);
+  delayMicroseconds(5);
+  digitalWrite(ultPin, LOW);
+  pinMode(ultPin, INPUT);
+  duration = pulseIn(ultPin, HIGH);
+
+  cm = duration / 29 / 2;
+  
+  servo1.write(0);
+  if(cm < 80)
+  {
+    servo1.write(90);
+    delay(5000);
+  }
+  else
+  {
+    servo1.write(0);
+  }
+  
+  int pir = digitalRead(2);
+  if(pir == HIGH)
+  {
+    digitalWrite(4,HIGH);
+    delay(1000);
+  }
+  else if(pir == LOW)
+  {
+    digitalWrite(4,LOW);
+  }
+  
+  float value=analogRead(A0);
+  float temperature=value*0.48;
+  if(temperature > 80)
+  {
+    digitalWrite(12,HIGH);
+  }
+  else
+  {
+    digitalWrite(12,LOW);
+  }
+}
