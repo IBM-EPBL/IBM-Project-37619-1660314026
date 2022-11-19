@@ -1,0 +1,1579 @@
+[
+    {
+        "id": "c388a29848d7773a",
+        "type": "tab",
+        "label": "Login Flow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1f833257aaacb33d",
+        "type": "tab",
+        "label": "Gas Meter",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "55fd28b98551debd",
+        "type": "tab",
+        "label": "Chart flow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b58ed0e53cb40ced",
+        "type": "tab",
+        "label": "Add user",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d3aa9540517e9373",
+        "type": "ibmiot",
+        "name": "SomeApi",
+        "keepalive": "60",
+        "serverName": "",
+        "cleansession": true,
+        "appId": "",
+        "shared": false
+    },
+    {
+        "id": "53318fe50dbe19ad",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "f3a1297faacd9c76",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "dcd5fd1882f80762",
+        "type": "ui_group",
+        "name": "SensorData",
+        "tab": "f3a1297faacd9c76",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b82da486.9fc8d8",
+        "type": "ui_group",
+        "name": "Signin",
+        "tab": "f3a1297faacd9c76",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "94b20980eba7f1b9",
+        "type": "ibmiot",
+        "name": "IBMIOT",
+        "keepalive": "300",
+        "serverName": "h2xjhq.messaging.internetofthings.ibmcloud.com/",
+        "cleansession": true,
+        "appId": "",
+        "shared": false
+    },
+    {
+        "id": "e827710d06db9e02",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "b6da8e5afd0e7d08",
+        "type": "ibmiot",
+        "name": "IBMIOT",
+        "keepalive": "300",
+        "serverName": "h2xjhq.messaging.internetofthings.ibmcloud.com/",
+        "cleansession": true,
+        "appId": "",
+        "shared": false
+    },
+    {
+        "id": "25468cee05feef7a",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "e5254709b27b6f02",
+        "type": "ibmiot",
+        "name": "IBMIOT",
+        "keepalive": "300",
+        "serverName": "h2xjhq.messaging.internetofthings.ibmcloud.com/",
+        "cleansession": true,
+        "appId": "",
+        "shared": false
+    },
+    {
+        "id": "afd938a11e4f717a",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "eeb9e19eda8d6f4b",
+        "type": "ibmiot",
+        "name": "IBMiotApi",
+        "keepalive": "300",
+        "serverName": "",
+        "cleansession": true,
+        "appId": "",
+        "shared": false
+    },
+    {
+        "id": "6713adf296769779",
+        "type": "ibmiot",
+        "name": "IBMIOT",
+        "keepalive": "300",
+        "serverName": "h2xjhq.messaging.internetofthings.ibmcloud.com/",
+        "cleansession": true,
+        "appId": "",
+        "shared": false
+    },
+    {
+        "id": "ebcd7c464a2dd0be",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "ceb158e82feb1761",
+        "type": "ui_tab",
+        "name": "Table data",
+        "icon": "fa-table",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2da8ef59883e9d7d",
+        "type": "ui_group",
+        "name": "Data History",
+        "tab": "ceb158e82feb1761",
+        "order": 1,
+        "disp": true,
+        "width": "11",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f084f068e85fdbe3",
+        "type": "ui_spacer",
+        "z": "55fd28b98551debd",
+        "name": "spacer",
+        "group": "2da8ef59883e9d7d",
+        "order": 2,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "8d1ed3232e1dacb3",
+        "type": "ui_spacer",
+        "z": "55fd28b98551debd",
+        "name": "spacer",
+        "group": "2da8ef59883e9d7d",
+        "order": 3,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "22690d1b585a6c8d",
+        "type": "ui_spacer",
+        "z": "55fd28b98551debd",
+        "name": "spacer",
+        "group": "2da8ef59883e9d7d",
+        "order": 4,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "9b9b46fa47cf1662",
+        "type": "ui_spacer",
+        "z": "55fd28b98551debd",
+        "name": "spacer",
+        "group": "2da8ef59883e9d7d",
+        "order": 5,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "c7545160167dfdea",
+        "type": "ui_spacer",
+        "z": "55fd28b98551debd",
+        "name": "spacer",
+        "group": "2da8ef59883e9d7d",
+        "order": 6,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "20339275e6052c6a",
+        "type": "ui_spacer",
+        "z": "55fd28b98551debd",
+        "name": "spacer",
+        "group": "2da8ef59883e9d7d",
+        "order": 7,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "35dcae9c7f56c736",
+        "type": "ui_spacer",
+        "z": "55fd28b98551debd",
+        "name": "spacer",
+        "group": "2da8ef59883e9d7d",
+        "order": 8,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "3a56e4ed3b7b7ed6",
+        "type": "ui_spacer",
+        "z": "55fd28b98551debd",
+        "name": "spacer",
+        "group": "2da8ef59883e9d7d",
+        "order": 9,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "bc8748f6021d3087",
+        "type": "ui_spacer",
+        "z": "55fd28b98551debd",
+        "name": "spacer",
+        "group": "2da8ef59883e9d7d",
+        "order": 10,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "b389bd347653fd04",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "334aae45f0019925",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "ee981257ed6123c0",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "0bccfd29b68e51f2",
+        "type": "ui_group",
+        "name": "Tab",
+        "tab": "",
+        "order": 2,
+        "disp": false,
+        "width": "25",
+        "collapse": false
+    },
+    {
+        "id": "23b7d00fe2a60db9",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "f1e545b54974ce51",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "bab19da291a10492",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "23998c106343e16a",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "b8c3067213dd8462",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "b8c3067213dd8462",
+        "type": "ui_tab",
+        "name": "Create user",
+        "icon": "fa-user-circle",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5f54d27e7603419a",
+        "type": "cloudant",
+        "host": "https://apikey-v2-11srmqhzoegm42a9b5jknw2tzwqkl90qw409hsjkx6s8:0806df7c356b9bff1d243e9f1236c0d7@5be2ecfe-fe05-406c-88e0-4a8bd97cb186-bluemix.cloudantnosqldb.appdomain.cloud",
+        "name": "Cloudant db"
+    },
+    {
+        "id": "4d40467620b8c91c",
+        "type": "ibmiot",
+        "name": "IBMiotApi",
+        "keepalive": "300",
+        "serverName": "",
+        "cleansession": true,
+        "appId": "",
+        "shared": false
+    },
+    {
+        "id": "3cf31d49.482212",
+        "type": "ibmiot",
+        "name": "IBMIOT",
+        "keepalive": "300",
+        "serverName": "h2xjhq.messaging.internetofthings.ibmcloud.com/",
+        "cleansession": true,
+        "appId": "",
+        "shared": false
+    },
+    {
+        "id": "e427a015ece88c82",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "af2d8f0f5139e2d2",
+        "type": "ui_group",
+        "name": "Location History",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 11,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f5f7cada415a15e8",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "1deed69fcda2c602",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "62b44eba9c39b679",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "4edfae8b.b8925",
+        "type": "ui_group",
+        "name": "Tab",
+        "tab": "",
+        "order": 2,
+        "disp": false,
+        "width": "25",
+        "collapse": false
+    },
+    {
+        "id": "205ac72e296cb65f",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "cc7d7ea92ffb628f",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a40bb0d9c16471df",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "fc4ef102.39e0d",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "b28759a8a8084e39",
+        "type": "cloudant",
+        "host": "09e1d0be-8434-4a35-8fa1-9a7a9dbfb4ce-bluemix.cloudantnosqldb.appdomain.cloud",
+        "name": "Cloudant db"
+    },
+    {
+        "id": "3f2799fddd5ecb80",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "c35e46a8.b04ce8",
+        "type": "ui_group",
+        "name": "SensorData",
+        "tab": "d65502b1.ee517",
+        "order": 2,
+        "disp": true,
+        "width": "14",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4de9506d.e7364",
+        "type": "ui_group",
+        "d": true,
+        "name": "History",
+        "tab": "d65502b1.ee517",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "552d30d9.1235f",
+        "type": "ui_group",
+        "name": "Child_tracking",
+        "tab": "d65502b1.ee517",
+        "order": 3,
+        "disp": true,
+        "width": "22",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "71817216364ba762",
+        "type": "ui_form",
+        "z": "c388a29848d7773a",
+        "name": "Dashboard Sign-In",
+        "label": "",
+        "group": "b82da486.9fc8d8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "username",
+                "value": "username",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "password",
+                "value": "password",
+                "type": "password",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "username": "",
+            "password": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "",
+        "topicType": "str",
+        "splitLayout": false,
+        "className": "",
+        "x": 310,
+        "y": 260,
+        "wires": [
+            [
+                "3211a5cbe725f431",
+                "d05ffbb9b4a7b1b3",
+                "622a5335d95ef08e"
+            ]
+        ]
+    },
+    {
+        "id": "5d4a1cb697a2a48a",
+        "type": "debug",
+        "z": "c388a29848d7773a",
+        "name": "Debug Account Log ",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 900,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "c826cf68083df889",
+        "type": "comment",
+        "z": "c388a29848d7773a",
+        "name": "Sign-In Section",
+        "info": "",
+        "x": 280,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "3211a5cbe725f431",
+        "type": "function",
+        "z": "c388a29848d7773a",
+        "name": "Account Log",
+        "func": "var accountlog =  flow.get(\"accountlog\") || [] ; \n\naccountlog.push({ accessAt : new Date(), username : msg.payload.username})\n\nflow.set(\"accountlog\", accountlog);\n\nmsg.payload = accountlog;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 509.00000762939453,
+        "y": 229.99999618530273,
+        "wires": [
+            [
+                "5d4a1cb697a2a48a"
+            ]
+        ]
+    },
+    {
+        "id": "d05ffbb9b4a7b1b3",
+        "type": "function",
+        "z": "c388a29848d7773a",
+        "name": "Account Verification",
+        "func": "var accounts =  flow.get(\"accounts\") || [ { username : \"admin\", password : \"admin\"},{ username : \"guest\", password : \"guest\"}] ; \n\nvar username = msg.payload.username ;\nvar password = msg.payload.password ; \n\nmsg.payload = 1;\n\naccounts.forEach(function ( account ){\n    if ( account.username == username ) {\n       msg.payload = 2;\n       if ( account.password == password ) {\n           msg.payload = 0;\n       } \n    }\n});\n\nif ( msg.payload == 0 ) {\n  var currentsocketid = flow.get(\"clientid\") || undefined;\n  if ( currentsocketid !== undefined && currentsocketid !== msg.socketid ) msg.payload = 3;\n}\n// keep the original socketid from msg.socketid;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 522.0000457763672,
+        "y": 275.0000057220459,
+        "wires": [
+            [
+                "02fed30694e253d2"
+            ]
+        ]
+    },
+    {
+        "id": "02fed30694e253d2",
+        "type": "switch",
+        "z": "c388a29848d7773a",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 691.0000419616699,
+        "y": 305.9999885559082,
+        "wires": [
+            [
+                "56f5fb127ba9d7ed"
+            ],
+            [
+                "1e69630da4013cd6"
+            ],
+            [
+                "5da647c6d585233c"
+            ],
+            [
+                "aba9811d64bbe962"
+            ]
+        ]
+    },
+    {
+        "id": "56f5fb127ba9d7ed",
+        "type": "function",
+        "z": "c388a29848d7773a",
+        "name": "= 0 : Success",
+        "func": "/* activate session timer */\nvar sessionTimer =  flow.get(\"sessionTimer\") || 0; \nvar currTime = Date.now();\nflow.set(\"sessionTimer\", currTime);\nflow.set(\"clientid\", msg.socketid);\n/* ui-control payload */\nmsg.payload = { group: {\n    show: [\"Dashboard_SensorData\", \"Another_History\"],\n    hide : [\"Dashboard_Signin\"]\n    }\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860.999885559082,
+        "y": 261.99999809265137,
+        "wires": [
+            [
+                "158af7a5e8e1e163"
+            ]
+        ]
+    },
+    {
+        "id": "1e69630da4013cd6",
+        "type": "function",
+        "z": "c388a29848d7773a",
+        "name": "= 1 : Unknown User",
+        "func": "msg.payload = \"Username Doesn't exist!!!\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 881.9998931884766,
+        "y": 299,
+        "wires": [
+            [
+                "acf37e04d5fb6a0b"
+            ]
+        ]
+    },
+    {
+        "id": "5da647c6d585233c",
+        "type": "function",
+        "z": "c388a29848d7773a",
+        "name": "= 2 : Wrong Password",
+        "func": "msg.payload = \"Invalid Password\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 882.9999618530273,
+        "y": 336.0000123977661,
+        "wires": [
+            [
+                "acf37e04d5fb6a0b"
+            ]
+        ]
+    },
+    {
+        "id": "acf37e04d5fb6a0b",
+        "type": "ui_toast",
+        "z": "c388a29848d7773a",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "topic": "Authentication Failed",
+        "name": "Authentication Failure Dialog",
+        "x": 1147.9999732971191,
+        "y": 319,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "622a5335d95ef08e",
+        "type": "debug",
+        "z": "c388a29848d7773a",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 491.5000419616699,
+        "y": 340.5347557067871,
+        "wires": []
+    },
+    {
+        "id": "158af7a5e8e1e163",
+        "type": "ui_ui_control",
+        "z": "c388a29848d7773a",
+        "name": "Go to Sensor/History Group",
+        "x": 1148.0000686645508,
+        "y": 261.9999942779541,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3f0e38350a675131",
+        "type": "ui_toast",
+        "z": "c388a29848d7773a",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "topic": "System In Use.",
+        "name": "System In-Use Dialog",
+        "x": 1131.1111793518066,
+        "y": 372.1215353012085,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aba9811d64bbe962",
+        "type": "function",
+        "z": "c388a29848d7773a",
+        "name": "= 4 : System In Use",
+        "func": "msg.payload = \"System is used by other user.\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 872.4443283081055,
+        "y": 373.1215286254883,
+        "wires": [
+            [
+                "3f0e38350a675131"
+            ]
+        ]
+    },
+    {
+        "id": "749e38d48f75d763",
+        "type": "ui_button",
+        "z": "c388a29848d7773a",
+        "name": "",
+        "group": "dcd5fd1882f80762",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Log out",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "logout",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 300,
+        "y": 400,
+        "wires": [
+            [
+                "426d9da1e5b14915"
+            ]
+        ]
+    },
+    {
+        "id": "426d9da1e5b14915",
+        "type": "function",
+        "z": "c388a29848d7773a",
+        "name": "Redirect",
+        "func": "var msg = {};\n\nmsg.socketid = flow.get(\"clientid\") || undefined;\nmsg.payload = {\n    group: {\n        hide: [\"Dashboard_SensorData\"],\n        show: [\"Dashboard_Signin\"]\n    }\n};\n\nflow.set(\"clientid\", undefined);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 460,
+        "wires": [
+            [
+                "bcdfcc52d0765ba6"
+            ]
+        ]
+    },
+    {
+        "id": "bcdfcc52d0765ba6",
+        "type": "ui_ui_control",
+        "z": "c388a29848d7773a",
+        "name": "Go back to login",
+        "events": "all",
+        "x": 680,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d0480727fbba03ad",
+        "type": "ibmiot in",
+        "z": "1f833257aaacb33d",
+        "authentication": "apiKey",
+        "apiKey": "d3aa9540517e9373",
+        "inputType": "evt",
+        "logicalInterface": "",
+        "ruleId": "",
+        "deviceId": "",
+        "applicationId": "",
+        "deviceType": "+",
+        "eventType": "+",
+        "commandType": "",
+        "format": "json",
+        "name": "IBM IoT",
+        "service": "registered",
+        "allDevices": "",
+        "allApplications": "",
+        "allDeviceTypes": true,
+        "allLogicalInterfaces": "",
+        "allEvents": true,
+        "allCommands": "",
+        "allFormats": "",
+        "qos": 0,
+        "x": 150,
+        "y": 360,
+        "wires": [
+            [
+                "f581fc2024a31f2c",
+                "1deb0c9955c6011b",
+                "fac2953fe64d44bd",
+                "df499fc782768499",
+                "4cd469bfd9fc9896"
+            ]
+        ]
+    },
+    {
+        "id": "f581fc2024a31f2c",
+        "type": "debug",
+        "z": "1f833257aaacb33d",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 360,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "fac2953fe64d44bd",
+        "type": "function",
+        "z": "1f833257aaacb33d",
+        "name": "Pressure",
+        "func": "msg.payload = msg.payload[\"Pressure\"];\nmsg.topic = \"Pressure\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 520,
+        "wires": [
+            [
+                "4f7fa528cae26c3a"
+            ]
+        ]
+    },
+    {
+        "id": "4f7fa528cae26c3a",
+        "type": "ui_gauge",
+        "z": "1f833257aaacb33d",
+        "name": "",
+        "group": "dcd5fd1882f80762",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Pressure",
+        "label": "Kpa",
+        "format": "{{Pressure}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 700,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "1deb0c9955c6011b",
+        "type": "function",
+        "z": "1f833257aaacb33d",
+        "name": "Hazardous Gas",
+        "func": "msg.payload = msg.payload[\"Gas\"];\nmsg.topic = \"Gas\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 220,
+        "wires": [
+            [
+                "2b7f042684049a9f",
+                "162583b431e50893"
+            ]
+        ]
+    },
+    {
+        "id": "2b7f042684049a9f",
+        "type": "rbe",
+        "z": "1f833257aaacb33d",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 450,
+        "y": 340,
+        "wires": [
+            [
+                "9c22fd2feb5090c0"
+            ]
+        ]
+    },
+    {
+        "id": "9c22fd2feb5090c0",
+        "type": "switch",
+        "z": "1f833257aaacb33d",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 630,
+        "y": 340,
+        "wires": [
+            [
+                "d3f7ac9b12645138"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "d3f7ac9b12645138",
+        "type": "function",
+        "z": "1f833257aaacb33d",
+        "name": "",
+        "func": "msg.payload=\"Hazardous Gas detected!!\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 280,
+        "wires": [
+            [
+                "a004969a8f3f47d3",
+                "8dda7085702eec08",
+                "e66c97823efea71c",
+                "9063d2437b2c2480"
+            ]
+        ]
+    },
+    {
+        "id": "8dda7085702eec08",
+        "type": "ui_toast",
+        "z": "1f833257aaacb33d",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 1150,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a004969a8f3f47d3",
+        "type": "debug",
+        "z": "1f833257aaacb33d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1150,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "162583b431e50893",
+        "type": "ui_gauge",
+        "z": "1f833257aaacb33d",
+        "name": "",
+        "group": "dcd5fd1882f80762",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Hazardous Gas",
+        "label": "PPM",
+        "format": "{{Gas}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 580,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "df499fc782768499",
+        "type": "function",
+        "z": "1f833257aaacb33d",
+        "name": "Filter temperature",
+        "func": "msg.payload = msg.payload[\"Temperature\"];\nmsg.topic = \"Temperature\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 600,
+        "wires": [
+            [
+                "b9622cf588c2c253"
+            ]
+        ]
+    },
+    {
+        "id": "b9622cf588c2c253",
+        "type": "ui_gauge",
+        "z": "1f833257aaacb33d",
+        "name": "",
+        "group": "dcd5fd1882f80762",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "°C",
+        "format": "{{Temperature}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 730,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "4cd469bfd9fc9896",
+        "type": "function",
+        "z": "1f833257aaacb33d",
+        "name": "Humidity",
+        "func": "msg.payload = msg.payload[\"Humidity\"];\nmsg.topic = \"Humidity\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 660,
+        "wires": [
+            [
+                "d57f4d598df67771"
+            ]
+        ]
+    },
+    {
+        "id": "d57f4d598df67771",
+        "type": "ui_gauge",
+        "z": "1f833257aaacb33d",
+        "name": "",
+        "group": "dcd5fd1882f80762",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "%",
+        "format": "{{Humidity}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ff0000"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 720,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "e66c97823efea71c",
+        "type": "cloudant out",
+        "z": "1f833257aaacb33d",
+        "name": "",
+        "cloudant": "5f54d27e7603419a",
+        "database": "Gas-data",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 1140,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "9063d2437b2c2480",
+        "type": "rbe",
+        "z": "1f833257aaacb33d",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 990,
+        "y": 160,
+        "wires": [
+            [
+                "ca58f55e708c3f48"
+            ]
+        ]
+    },
+    {
+        "id": "ca58f55e708c3f48",
+        "type": "e-mail",
+        "z": "1f833257aaacb33d",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "secure": true,
+        "tls": true,
+        "name": "palanikumar@student.tce.edu",
+        "dname": "",
+        "x": 1230,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "159ff989b45aa028",
+        "type": "function",
+        "z": "55fd28b98551debd",
+        "name": "function 1",
+        "func": "var temp = msg.payload[\"Temperature\"];\nvar hum = msg.payload[\"Humidity\"];\nvar gas = msg.payload[\"Gas\"];\nvar pr = msg.payload[\"Pressure\"];\n\nvar newArr = global.get(\"arr\")\n\nglobal.set(\"arr\", [...newArr, { \"Temperature°C\": temp, \"Humidity%\": hum, \"HazardousGas(PPM)\":gas, \"Pressure(KPa)\":pr }])\nglobal.set('Temperature', temp)\nglobal.set('Humidity', hum)\nglobal.set('HazardousGas', gas)\nglobal.set('Pressure', pr)\n\nmsg.payload = global.get(\"arr\")\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 420,
+        "wires": [
+            [
+                "1e1a723fcf948ce1",
+                "031fb7425dabc002"
+            ]
+        ]
+    },
+    {
+        "id": "031fb7425dabc002",
+        "type": "debug",
+        "z": "55fd28b98551debd",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "cd07ce647bbddd1c",
+        "type": "function",
+        "z": "55fd28b98551debd",
+        "name": "Init array",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nglobal.set(\"arr\",[])",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1e1a723fcf948ce1",
+        "type": "ui_table",
+        "z": "55fd28b98551debd",
+        "group": "2da8ef59883e9d7d",
+        "name": "",
+        "order": 1,
+        "width": "11",
+        "height": 9,
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 810,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "5d3e90a97fd267fd",
+        "type": "ibmiot in",
+        "z": "55fd28b98551debd",
+        "authentication": "apiKey",
+        "apiKey": "d3aa9540517e9373",
+        "inputType": "evt",
+        "logicalInterface": "",
+        "ruleId": "",
+        "deviceId": "",
+        "applicationId": "",
+        "deviceType": "+",
+        "eventType": "+",
+        "commandType": "",
+        "format": "json",
+        "name": "IBM IoT",
+        "service": "registered",
+        "allDevices": "",
+        "allApplications": "",
+        "allDeviceTypes": true,
+        "allLogicalInterfaces": "",
+        "allEvents": true,
+        "allCommands": "",
+        "allFormats": "",
+        "qos": 0,
+        "x": 150,
+        "y": 400,
+        "wires": [
+            [
+                "159ff989b45aa028"
+            ]
+        ]
+    },
+    {
+        "id": "4efd4834.2ec6a8",
+        "type": "ui_form",
+        "z": "b58ed0e53cb40ced",
+        "name": "",
+        "label": "",
+        "group": "23998c106343e16a",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "UserName",
+                "value": "UserName",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Password",
+                "value": "Password",
+                "type": "password",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Email",
+                "value": "Email",
+                "type": "email",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Age",
+                "value": "age",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "IndustryName",
+                "value": "IndustryName",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Remember",
+                "value": "Remember",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "UserName": "",
+            "Password": "",
+            "Email": "",
+            "age": "",
+            "IndustryName": "",
+            "Remember": false
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "",
+        "topicType": "str",
+        "splitLayout": false,
+        "className": "",
+        "x": 590,
+        "y": 460,
+        "wires": [
+            [
+                "8a66b0228347da34"
+            ]
+        ]
+    },
+    {
+        "id": "8a66b0228347da34",
+        "type": "cloudant out",
+        "z": "b58ed0e53cb40ced",
+        "name": "Add user",
+        "cloudant": "b28759a8a8084e39",
+        "database": "gas_signup",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 720,
+        "y": 320,
+        "wires": []
+    }
+]
